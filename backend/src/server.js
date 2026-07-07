@@ -7,7 +7,7 @@ const app = express();
 console.log('Starting LifeLink API Server...');
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: process.env.FRONTEND_URL || ['http://localhost:5173', 'https://lifelink-pzs8-b77k0l6xs-bilalahmed12331s-projects.vercel.app'],
   credentials: true
 }));
 
